@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الألعاب التعليمية</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>الألعاب التعليمية</h1>
+</header>
+
+<nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="seances.html">الحصص</a>
+  <a href="jeux.html">الألعاب</a>
+  <a href="ressources.html">الموارد</a>
+</nav>
+
+<main>
+
+  <div class="circle-container">
+
+    <div class="circle-card">
+      <h3>الفرز السريع</h3>
+      <p>فرز بطاقات النفايات بسرعة في الحاويات المناسبة.</p>
+      <button onclick="showDetails('g1')">عرض التفاصيل</button>
+    </div>
+
+    <div class="circle-card">
+      <h3>محققو الكوكب</h3>
+      <p>تحليل مواقف وتحديد السلوكيات البيئية.</p>
+      <button onclick="showDetails('g2')">عرض التفاصيل</button>
+    </div>
+
+    <div class="circle-card">
+      <h3>المسار البيئي</h3>
+      <p>لعبة لوحة بأسئلة وتحديات بيئية.</p>
+      <button onclick="showDetails('g3')">عرض التفاصيل</button>
+    </div>
+
+    <div class="circle-card">
+      <h3>تحدي الطاقة</h3>
+      <p>اقتراح حلول لتوفير الطاقة في المدرسة والمنزل.</p>
+      <button onclick="showDetails('g4')">عرض التفاصيل</button>
+    </div>
+
+  </div>
+
+  <div id="g1" class="details hidden">
+    <h3>لعبة الفرز السريع</h3>
+    <p><strong>الهدف:</strong> تعزيز مهارات فرز النفايات.</p>
+    <p><strong>الطريقة:</strong> سباق زمني بين مجموعات لفرز البطاقات بشكل صحيح.</p>
+  </div>
+
+  <div id="g2" class="details hidden">
+    <h3>لعبة محققو الكوكب</h3>
+    <p><strong>الهدف:</strong> تنمية التفكير البيئي النقدي.</p>
+    <p><strong>الطريقة:</strong> تحليل مواقف واقتراح السلوك الصحيح.</p>
+  </div>
+
+  <div id="g3" class="details hidden">
+    <h3>لعبة المسار البيئي</h3>
+    <p><strong>الهدف:</strong> التعلم من خلال اللعب.</p>
+    <p><strong>الطريقة:</strong> التقدم على اللوحة بالإجابة على أسئلة بيئية.</p>
+  </div>
+
+  <div id="g4" class="details hidden">
+    <h3>لعبة تحدي الطاقة</h3>
+    <p><strong>الهدف:</strong> تشجيع السلوكيات المسؤولة يوميًا.</p>
+    <p><strong>الطريقة:</strong> اقتراح حلول عملية لتوفير الطاقة.</p>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 – موارد تربوية للتربية على المسؤولية البيئية</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

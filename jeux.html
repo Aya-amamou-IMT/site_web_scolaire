@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>الألعاب التعليمية</title>
+  <title>الأنشطة غير الصفية</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>الألعاب التعليمية</h1>
+  <h1>الأنشطة غير الصفية</h1>
 </header>
 
 <nav>
   <a href="index.html">الرئيسية</a>
-  <a href="seances.html">الحصص</a>
-  <a href="jeux.html">الألعاب</a>
+  <a href="seances.html">الأنشطة الصفية</a>
+  <a href="jeux.html">الأنشطة غير الصفية</a>
   <a href="ressources.html">الموارد</a>
+  <a href="stories.html">القصص</a>
 </nav>
 
 <main>
@@ -24,53 +25,69 @@
   <div class="circle-container">
 
     <div class="circle-card">
-      <h3>الفرز السريع</h3>
-      <p>فرز بطاقات النفايات بسرعة في الحاويات المناسبة.</p>
-      <button onclick="showDetails('g1')">عرض التفاصيل</button>
+      <h3>أنشودة البيئة السليمة - أنشودة تعليمية للأطفال</h3>
+      <p>نشاط سمعي بصري لتوعية الأطفال بأهمية المحافظة على البيئة.</p>
+      <button onclick="showDetails('g1')">عرض الفيديو</button>
     </div>
 
     <div class="circle-card">
-      <h3>محققو الكوكب</h3>
-      <p>تحليل مواقف وتحديد السلوكيات البيئية.</p>
-      <button onclick="showDetails('g2')">عرض التفاصيل</button>
+      <h3>أنشودة ترفقوا بالبيئة</h3>
+      <p>أنشودة تربوية تساعد الأطفال على اكتساب سلوكات بيئية سليمة.</p>
+      <button onclick="showDetails('g2')">عرض الفيديو</button>
     </div>
 
     <div class="circle-card">
-      <h3>المسار البيئي</h3>
-      <p>لعبة لوحة بأسئلة وتحديات بيئية.</p>
-      <button onclick="showDetails('g3')">عرض التفاصيل</button>
+      <h3>نشيد البيئة داري وكياني</h3>
+      <p>نشيد تربوي حول حب البيئة والانتماء إليها.</p>
+      <button onclick="showDetails('g3')">عرض الفيديو</button>
     </div>
 
     <div class="circle-card">
-      <h3>تحدي الطاقة</h3>
-      <p>اقتراح حلول لتوفير الطاقة في المدرسة والمنزل.</p>
-      <button onclick="showDetails('g4')">عرض التفاصيل</button>
+      <h3>نشيد البيئة - أصدقاء البيئة</h3>
+      <p>نشيد للأطفال يرسّخ قيم النظافة وحماية الطبيعة.</p>
+      <button onclick="showDetails('g4')">عرض الفيديو</button>
     </div>
 
   </div>
 
+  <!-- فيديو 1 -->
   <div id="g1" class="details hidden">
-    <h3>لعبة الفرز السريع</h3>
-    <p><strong>الهدف:</strong> تعزيز مهارات فرز النفايات.</p>
-    <p><strong>الطريقة:</strong> سباق زمني بين مجموعات لفرز البطاقات بشكل صحيح.</p>
+    <h3>أنشودة البيئة السليمة</h3>
+
+    <video width="100%" controls autoplay muted loop>
+    <source src="videos/chansons/video1.mp4" type="video/mp4">
+    Votre navigateur ne prend pas en charge la lecture vidéo.
+  </video>
   </div>
 
+  <!-- فيديو 2 -->
   <div id="g2" class="details hidden">
-    <h3>لعبة محققو الكوكب</h3>
-    <p><strong>الهدف:</strong> تنمية التفكير البيئي النقدي.</p>
-    <p><strong>الطريقة:</strong> تحليل مواقف واقتراح السلوك الصحيح.</p>
+    <h3>أنشودة ترفقوا بالبيئة</h3>
+  
+    <video width="100%" controls>
+    <source src="videos/chansons/video2.mp4" type="video/mp4">
+    Votre navigateur ne prend pas en charge la lecture vidéo.
+  </video>
   </div>
 
+  <!-- فيديو 3 -->
   <div id="g3" class="details hidden">
-    <h3>لعبة المسار البيئي</h3>
-    <p><strong>الهدف:</strong> التعلم من خلال اللعب.</p>
-    <p><strong>الطريقة:</strong> التقدم على اللوحة بالإجابة على أسئلة بيئية.</p>
+    <h3>نشيد البيئة داري وكياني</h3>
+
+    <video width="100%" controls>
+    <source src="videos/chansons/video3.mp4" type="video/mp4">
+    Votre navigateur ne prend pas en charge la lecture vidéo.
+  </video>
   </div>
 
+  <!-- فيديو 4 -->
   <div id="g4" class="details hidden">
-    <h3>لعبة تحدي الطاقة</h3>
-    <p><strong>الهدف:</strong> تشجيع السلوكيات المسؤولة يوميًا.</p>
-    <p><strong>الطريقة:</strong> اقتراح حلول عملية لتوفير الطاقة.</p>
+    <h3>نشيد البيئة - أصدقاء البيئة</h3>
+    
+    <video width="100%" controls>
+    <source src="videos/chansons/video4.mp4" type="video/mp4">
+    Votre navigateur ne prend pas en charge la lecture vidéo.
+  </video>
   </div>
 
 </main>
@@ -79,6 +96,18 @@
   <p>© 2026 – موارد تربوية للتربية على المسؤولية البيئية</p>
 </footer>
 
-<script src="script.js"></script>
+<script>
+  function showDetails(id) {
+    const allDetails = document.querySelectorAll('.details');
+    allDetails.forEach(detail => {
+      if (detail.id === id) {
+        detail.classList.toggle('hidden');
+      } else {
+        detail.classList.add('hidden');
+      }
+    });
+  }
+</script>
+
 </body>
 </html>

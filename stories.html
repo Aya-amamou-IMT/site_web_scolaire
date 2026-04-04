@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>القصص التعليمية</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>القصص التعليمية</h1>
+</header>
+
+<nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="seances.html">الأنشطة الصفية</a>
+  <a href="jeux.html">الأنشطةالغير صفيةالموارد</a>
+  <a href="ressources.html">الموارد</a>
+  <a href="stories.html">القصص</a>
+</nav>
+
+<main>
+
+  <div class="circle-container">
+
+    <div class="circle-card">
+      <img src="images/foret.jpg" alt="حماية الغابة">
+      <h3>القصة 1</h3>
+      <p>قصة حول حماية الغابة من التلوث والحرائق وقطع الأشجار.</p>
+      <button onclick="showDetails('s1')">عرض التفاصيل</button>
+    </div>
+
+    <div class="circle-card">
+      <img src="images/tortue.jpg" alt="حماية البحر">
+      <h3>القصة 2</h3>
+      <p>قصة حول حماية البحر والسلاحف من التلوث البلاستيكي.</p>
+      <button onclick="showDetails('s2')">عرض التفاصيل</button>
+    </div>
+
+    <div class="circle-card">
+      <img src="images/eau.jpg" alt="ترشيد استهلاك الماء">
+      <h3>القصة 3</h3>
+      <p>قصة حول أهمية الماء وضرورة ترشيد استهلاكه.</p>
+      <button onclick="showDetails('s3')">عرض التفاصيل</button>
+    </div>
+
+    <div class="circle-card">
+      <img src="images/citoyen.jpg" alt="المواطن الصغير والبيئة">
+      <h3>القصة 4</h3>
+      <p>قصة حول المواطنة البيئية: فرز النفايات، الاقتصاد في الماء والطاقة، وحماية المحيط.</p>
+      <button onclick="showDetails('s4')">عرض التفاصيل</button>
+    </div>
+
+  </div>
+
+  <div id="s1" class="details hidden">
+    <h3>القصة 1: حماية الغابة</h3>
+    <p><strong>الفكرة:</strong> التوعية بخطورة قطع الأشجار، الحرائق، ورمي النفايات في الغابة.</p>
+    <p><strong>الشخصية الرئيسية:</strong> جود.</p>
+    <p><strong>الهدف:</strong> غرس حب الطبيعة والمسؤولية في حماية الغابة.</p>
+    <a href="dessins/قصة1.docx" download class="download-btn">تحميل القصة</a>
+  </div>
+
+  <div id="s2" class="details hidden">
+    <h3>القصة 2: حماية البحر</h3>
+    <p><strong>الفكرة:</strong> التوعية بأضرار التلوث البلاستيكي على الكائنات البحرية.</p>
+    <p><strong>الشخصية الرئيسية:</strong> نوار.</p>
+    <p><strong>الهدف:</strong> تعزيز احترام البحر والكائنات التي تعيش فيه.</p>
+    <a href="dessins/قصة2.docx" download class="download-btn">تحميل القصة</a>
+  </div>
+
+  <div id="s3" class="details hidden">
+    <h3>القصة 3: الماء سر الحياة</h3>
+    <p><strong>الفكرة:</strong> أهمية الماء وخطورة التبذير والتلوث.</p>
+    <p><strong>الشخصية الرئيسية:</strong> شادي.</p>
+    <p><strong>الهدف:</strong> تربية الطفل على الاقتصاد في الماء والمحافظة عليه.</p>
+    <a href="dessins/قصة3.docx" download class="download-btn">تحميل القصة</a>
+  </div>
+
+  <div id="s4" class="details hidden">
+    <h3>القصة 4: المواطن الصغير والبيئة</h3>
+    <p><strong>الفكرة:</strong> المواطنة البيئية من خلال فرز النفايات، احترام النظافة، الاقتصاد في الماء والطاقة، وحماية الشاطئ.</p>
+    <p><strong>الشخصيات الرئيسية:</strong> مجدي، ليلى، مريم.</p>
+    <p><strong>الهدف:</strong> تنمية السلوك البيئي المسؤول لدى الأطفال.</p>
+    <a href="dessins/القصة4.docx" download class="download-btn">تحميل القصة</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 – موارد تربوية للتربية على المسؤولية البيئية</p>
+</footer>
+
+<script>
+  function showDetails(id) {
+    const allDetails = document.querySelectorAll('.details');
+    allDetails.forEach(detail => {
+      if (detail.id === id) {
+        detail.classList.toggle('hidden');
+      } else {
+        detail.classList.add('hidden');
+      }
+    });
+  }
+</script>
+
+</body>
+</html>

@@ -232,3 +232,8 @@ body {
 .contact-info a:hover {
   text-decoration: underline;
 }
+
+.phone {
+  direction: ltr;
+  unicode-bidi: embed;
+}

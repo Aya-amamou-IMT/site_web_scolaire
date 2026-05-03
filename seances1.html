@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الأنشطة الصفية</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>الأنشطة الصفية</h1>
+</header>
+
+<nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="seances.html">الأنشطة الصفية</a>
+  <a href="jeux.html">الأنشطةالغير صفية</a>
+  <a href="stories.html">القصص</a>
+</nav>
+
+<main>
+
+  <div class="circle-container">
+
+    <div class="circle-card">
+      <img src="images/Tri-selectif-La-Fère-1024x648.png" alt="فرز النفايات">
+      <h3>الحصة 1</h3>
+      <p>فهم معنى البيئة والعناصر الطبيعية والبشرية.</p>
+      <button onclick="showDetails('s1')">عرض التفاصيل</button>
+    </div>
+
+    <div class="circle-card">
+      <h3>الحصة 2</h3>
+      <p>تعلم فرز النفايات وأهميته.</p>
+      <button onclick="showDetails('s2')">عرض التفاصيل</button>
+    </div>
+
+    <div class="circle-card">
+      <h3>الحصة 3</h3>
+      <p>حماية الطبيعة والسلوكيات الصحيحة.</p>
+      <button onclick="showDetails('s3')">عرض التفاصيل</button>
+    </div>
+
+    <div class="circle-card">
+      <h3>الحصة 4</h3>
+      <p>ترشيد استهلاك الطاقة في الحياة اليومية.</p>
+      <button onclick="showDetails('s4')">عرض التفاصيل</button>
+    </div>
+
+    <div class="circle-card">
+      <h3>الحصة 5</h3>
+      <p>الاستهلاك المسؤول واختيار المنتجات البيئية.</p>
+      <button onclick="showDetails('s5')">عرض التفاصيل</button>
+    </div>
+
+  </div>
+
+  <!-- <div id="s1" class="details hidden">
+    <h3>الحصة 1: فهم البيئة</h3>
+    <p><strong>الأهداف:</strong> فهم معنى البيئة، التعرف على العناصر الطبيعية والبشرية.</p>
+    <p><strong>الوسائل:</strong> صور، سبورة، جهاز عرض.</p>
+    <p><strong>سير الحصة:</strong> نقاش جماعي، تصنيف الصور، خلاصة جماعية.</p>
+    <a href="" download>
+      <button>تحميل PDF</button>
+    </a>
+    
+  </div> -->
+
+  <div id="s2" class="details hidden">
+    <h3>الحصة : فرز النفايات</h3>
+    <p><strong>الأهداف:</strong> فهم أهمية الفرز، القدرة على فرز النفايات اليومية.</p>
+    <p><strong>الوسائل:</strong> بطاقات نفايات، حاويات فرز.</p>
+    <p><strong>سير الحصة:</strong> مراجعة، لعبة فرز، تصحيح جماعي.</p>
+    <a href="pdf/حصّة ادماجية على النظافة للسنة ثانية.doc.pdf" download>
+      <button>تحميل PDF</button>
+    </a>
+
+  </div>
+
+  <div id="s3" class="details hidden">
+    <h3>الحصة: حماية الطبيعة</h3>
+    <p><strong>الأهداف:</strong> التعرف على السلوكيات الصحيحة والخاطئة.</p>
+    <p><strong>الوسائل:</strong> بطاقات مواقف، ملصقات.</p>
+    <p><strong>سير الحصة:</strong> قراءة مواقف، تصنيف، إعداد ملصق.</p>
+    <a href="dessins/قصة1.docx" download>
+      <button>تحميل PDF</button>
+    </a>
+  </div>
+
+  <div id="s4" class="details hidden">
+    <h3>الحصة : ترشيد استهلاك الطاقة</h3>
+    <p><strong>الأهداف:</strong> فهم معنى الطاقة، تقليل الاستهلاك.</p>
+    <p><strong>الوسائل:</strong> صور أجهزة كهربائية، بطاقات نصائح.</p>
+    <p><strong>سير الحصة:</strong> نقاش، لعبة سلوكيات موفرة، إعداد ميثاق.</p>
+     <a href="dessins/قصة2.docx" download>
+      <button>تحميل PDF</button>
+    </a>
+  </div>
+
+  <div id="s5" class="details hidden">
+    <h3>الحصة: الاستهلاك المسؤول</h3>
+    <p><strong>الأهداف:</strong> فهم الاستهلاك المسؤول، اختيار منتجات صديقة للبيئة.</p>
+    <p><strong>الوسائل:</strong> صور منتجات، بطاقات اختيار.</p>
+    <p><strong>سير الحصة:</strong> مقارنة، اختيارات جماعية، نقاش.</p>
+    <a href="dessins/قصة3.docx" download>
+      <button>تحميل PDF</button>
+    </a>
+  </div>
+
+   <div id="s1" class="details hidden">
+    <h3>الحصة: الاستهلاك المسؤول</h3>
+    <p><strong>الأهداف:</strong> فهم الاستهلاك المسؤول، اختيار منتجات صديقة للبيئة.</p>
+    <p><strong>الوسائل:</strong> صور منتجات، بطاقات اختيار.</p>
+    <p><strong>سير الحصة:</strong> مقارنة، اختيارات جماعية، نقاش.</p>
+    <a href="dessins/القصة4.docx" download>
+      <button>تحميل PDF</button>
+    </a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 – موارد تربوية للتربية على المسؤولية البيئية</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
